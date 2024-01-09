@@ -1,0 +1,1266 @@
+[
+    {
+        "id": 1,
+        "title": "Essent ISU World Cup - 1500m Men Division A",
+        "season": 2004,
+        "start": "2003-11-08",
+        "distance": {
+            "name": "1,500 Meter",
+            "distance": 1500,
+            "lapCount": 4
+        },
+        "category": "M",
+        "track": {
+            "id": 29,
+            "name": "Hamar Olympic Hall",
+            "city": "Hamar",
+            "country": "NOR",
+            "isOutdoor": false,
+            "altitude": 123,
+            "latitude": "60.793162",
+            "longitude": "11.101411"
+        },
+        "results": [
+            {
+                "startNumber": 26,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 1,
+                "time": "1:47.370",
+                "timeBehind": "0.000",
+                "skater": {
+                    "id": 537,
+                    "firstName": "Erben",
+                    "lastName": "Wennemars",
+                    "country": "NED",
+                    "gender": "M",
+                    "dateOfBirth": "1975-11-01"
+                }
+            },
+            {
+                "startNumber": 27,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 2,
+                "time": "1:47.550",
+                "timeBehind": "0.180",
+                "skater": {
+                    "id": 873,
+                    "firstName": "Mark",
+                    "lastName": "Tuitert",
+                    "country": "NED",
+                    "gender": "M",
+                    "dateOfBirth": "1980-04-04"
+                }
+            },
+            {
+                "startNumber": 27,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 3,
+                "time": "1:48.800",
+                "timeBehind": "1.430",
+                "skater": {
+                    "id": 474,
+                    "firstName": "Derek",
+                    "lastName": "Parra",
+                    "country": "USA",
+                    "gender": "M",
+                    "dateOfBirth": "1970-03-15"
+                }
+            },
+            {
+                "startNumber": 25,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 4,
+                "time": "1:48.890",
+                "timeBehind": "1.520",
+                "skater": {
+                    "id": 141,
+                    "firstName": "Carl",
+                    "lastName": "Verheijen",
+                    "country": "NED",
+                    "gender": "M",
+                    "dateOfBirth": "1975-05-26"
+                }
+            },
+            {
+                "startNumber": 24,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 5,
+                "time": "1:48.930",
+                "timeBehind": "1.560",
+                "skater": {
+                    "id": 985,
+                    "firstName": "Jochem",
+                    "lastName": "Uytdehaage",
+                    "country": "NED",
+                    "gender": "M",
+                    "dateOfBirth": "1976-07-09"
+                }
+            },
+            {
+                "startNumber": 28,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 6,
+                "time": "1:49.360",
+                "timeBehind": "1.990",
+                "skater": {
+                    "id": 157,
+                    "firstName": "Yevgeny",
+                    "lastName": "Lalenkov",
+                    "country": "RUS",
+                    "gender": "M",
+                    "dateOfBirth": "1981-02-16"
+                }
+            },
+            {
+                "startNumber": 18,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 7,
+                "time": "1:49.370",
+                "timeBehind": "2.000",
+                "skater": {
+                    "id": 237,
+                    "firstName": "Petter",
+                    "lastName": "Andersen",
+                    "country": "NOR",
+                    "gender": "M",
+                    "dateOfBirth": "1974-01-02"
+                }
+            },
+            {
+                "startNumber": 19,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 8,
+                "time": "1:49.400",
+                "timeBehind": "2.030",
+                "skater": {
+                    "id": 213,
+                    "firstName": "Chad",
+                    "lastName": "Hedrick",
+                    "country": "USA",
+                    "gender": "M",
+                    "dateOfBirth": "1977-04-17"
+                }
+            },
+            {
+                "startNumber": 8,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 9,
+                "time": "1:49.600",
+                "timeBehind": "2.230",
+                "skater": {
+                    "id": 929,
+                    "firstName": "Enrico",
+                    "lastName": "Fabris",
+                    "country": "ITA",
+                    "gender": "M",
+                    "dateOfBirth": "1981-10-05"
+                }
+            },
+            {
+                "startNumber": 22,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 10,
+                "time": "1:49.840",
+                "timeBehind": "2.470",
+                "skater": {
+                    "id": 356,
+                    "firstName": "Janne",
+                    "lastName": "H\u00e4nninen",
+                    "country": "FIN",
+                    "gender": "M",
+                    "dateOfBirth": "1975-08-16"
+                }
+            },
+            {
+                "startNumber": 15,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 11,
+                "time": "1:49.940",
+                "timeBehind": "2.570",
+                "skater": {
+                    "id": 794,
+                    "firstName": "Kc",
+                    "lastName": "Boutiette",
+                    "country": "USA",
+                    "gender": "M",
+                    "dateOfBirth": "1970-04-11"
+                }
+            },
+            {
+                "startNumber": 25,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 12,
+                "time": "1:50.180",
+                "timeBehind": "2.810",
+                "skater": {
+                    "id": 352,
+                    "firstName": "Ivan",
+                    "lastName": "Skobrev",
+                    "country": "RUS",
+                    "gender": "M",
+                    "dateOfBirth": "1983-02-08"
+                }
+            },
+            {
+                "startNumber": 28,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 13,
+                "time": "1:50.200",
+                "timeBehind": "2.830",
+                "skater": {
+                    "id": 902,
+                    "firstName": "Ids",
+                    "lastName": "Postma",
+                    "country": "NED",
+                    "gender": "M",
+                    "dateOfBirth": "1973-12-28"
+                }
+            },
+            {
+                "startNumber": 5,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 14,
+                "time": "1:50.210",
+                "timeBehind": "2.840",
+                "skater": {
+                    "id": 43,
+                    "firstName": "Johan",
+                    "lastName": "R\u00f6jler",
+                    "country": "SWE",
+                    "gender": "M",
+                    "dateOfBirth": "1981-11-11"
+                }
+            },
+            {
+                "startNumber": 17,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 15,
+                "time": "1:50.440",
+                "timeBehind": "3.070",
+                "skater": {
+                    "id": 32,
+                    "firstName": "Jay",
+                    "lastName": "Morrison",
+                    "country": "CAN",
+                    "gender": "M",
+                    "dateOfBirth": "1983-08-05"
+                }
+            },
+            {
+                "startNumber": 17,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 16,
+                "time": "1:50.490",
+                "timeBehind": "3.120",
+                "skater": {
+                    "id": 899,
+                    "firstName": "Vesa",
+                    "lastName": "Rosendahl",
+                    "country": "FIN",
+                    "gender": "M",
+                    "dateOfBirth": "1975-12-05"
+                }
+            },
+            {
+                "startNumber": 20,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 17,
+                "time": "1:50.680",
+                "timeBehind": "3.310",
+                "skater": {
+                    "id": 344,
+                    "firstName": "Jan",
+                    "lastName": "Friesinger",
+                    "country": "GER",
+                    "gender": "M",
+                    "dateOfBirth": "1980-11-20"
+                }
+            },
+            {
+                "startNumber": 23,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 18,
+                "time": "1:50.760",
+                "timeBehind": "3.390",
+                "skater": {
+                    "id": 640,
+                    "firstName": "Chris",
+                    "lastName": "Callis",
+                    "country": "USA",
+                    "gender": "M",
+                    "dateOfBirth": "1979-11-08"
+                }
+            },
+            {
+                "startNumber": 16,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 19,
+                "time": "1:51.040",
+                "timeBehind": "3.670",
+                "skater": {
+                    "id": 722,
+                    "firstName": "Yusuke",
+                    "lastName": "Imai",
+                    "country": "JPN",
+                    "gender": "M",
+                    "dateOfBirth": "1977-09-20"
+                }
+            },
+            {
+                "startNumber": 2,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 20,
+                "time": "1:51.110",
+                "timeBehind": "3.740",
+                "skater": {
+                    "id": 961,
+                    "firstName": "J\u00f6rg",
+                    "lastName": "Dallmann",
+                    "country": "GER",
+                    "gender": "M",
+                    "dateOfBirth": "1979-08-10"
+                }
+            },
+            {
+                "startNumber": 10,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 21,
+                "time": "1:51.410",
+                "timeBehind": "4.040",
+                "skater": {
+                    "id": 624,
+                    "firstName": "Stefan",
+                    "lastName": "Heythausen",
+                    "country": "GER",
+                    "gender": "M",
+                    "dateOfBirth": "1981-05-27"
+                }
+            },
+            {
+                "startNumber": 19,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 22,
+                "time": "1:51.470",
+                "timeBehind": "4.100",
+                "skater": {
+                    "id": 288,
+                    "firstName": "Risto",
+                    "lastName": "Rosendahl",
+                    "country": "FIN",
+                    "gender": "M",
+                    "dateOfBirth": "1979-11-23"
+                }
+            },
+            {
+                "startNumber": 26,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 23,
+                "time": "1:51.500",
+                "timeBehind": "4.130",
+                "skater": {
+                    "id": 601,
+                    "firstName": "Aleksandr",
+                    "lastName": "Kibalko",
+                    "country": "RUS",
+                    "gender": "M",
+                    "dateOfBirth": "1973-10-25"
+                }
+            },
+            {
+                "startNumber": 22,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 24,
+                "time": "1:51.520",
+                "timeBehind": "4.150",
+                "skater": {
+                    "id": 921,
+                    "firstName": "Jason",
+                    "lastName": "Parker",
+                    "country": "CAN",
+                    "gender": "M",
+                    "dateOfBirth": "1975-05-13"
+                }
+            },
+            {
+                "startNumber": 10,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 25,
+                "time": "1:51.550",
+                "timeBehind": "4.180",
+                "skater": {
+                    "id": 801,
+                    "firstName": "Stefano",
+                    "lastName": "Donagrandi",
+                    "country": "ITA",
+                    "gender": "M",
+                    "dateOfBirth": "1976-09-01"
+                }
+            },
+            {
+                "startNumber": 20,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 26,
+                "time": "1:51.760",
+                "timeBehind": "4.390",
+                "skater": {
+                    "id": 842,
+                    "firstName": "Tim",
+                    "lastName": "Hoffmann",
+                    "country": "USA",
+                    "gender": "M",
+                    "dateOfBirth": "1976-03-12"
+                }
+            },
+            {
+                "startNumber": 24,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 27,
+                "time": "1:51.830",
+                "timeBehind": "4.460",
+                "skater": {
+                    "id": 189,
+                    "firstName": "Dmitry",
+                    "lastName": "Shepel",
+                    "country": "RUS",
+                    "gender": "M",
+                    "dateOfBirth": "1977-08-08"
+                }
+            },
+            {
+                "startNumber": 9,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 28,
+                "time": "1:51.960",
+                "timeBehind": "4.590",
+                "skater": {
+                    "id": 67,
+                    "firstName": "Mika",
+                    "lastName": "Poutala",
+                    "country": "FIN",
+                    "gender": "M",
+                    "dateOfBirth": "1983-06-20"
+                }
+            },
+            {
+                "startNumber": 21,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 29,
+                "time": "1:51.970",
+                "timeBehind": "4.600",
+                "skater": {
+                    "id": 283,
+                    "firstName": "Philippe",
+                    "lastName": "Marois",
+                    "country": "CAN",
+                    "gender": "M",
+                    "dateOfBirth": "1980-10-13"
+                }
+            },
+            {
+                "startNumber": 18,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 30,
+                "time": "1:52.000",
+                "timeBehind": "4.630",
+                "skater": {
+                    "id": 109,
+                    "firstName": "Seung-Hwan",
+                    "lastName": "Lee",
+                    "country": "KOR",
+                    "gender": "M",
+                    "dateOfBirth": "1984-02-03"
+                }
+            },
+            {
+                "startNumber": 21,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 31,
+                "time": "1:52.040",
+                "timeBehind": "4.670",
+                "skater": {
+                    "id": 448,
+                    "firstName": "Sang-Yeop",
+                    "lastName": "Yeo",
+                    "country": "KOR",
+                    "gender": "M",
+                    "dateOfBirth": "1984-07-22"
+                }
+            },
+            {
+                "startNumber": 7,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 32,
+                "time": "1:52.050",
+                "timeBehind": "4.680",
+                "skater": {
+                    "id": 361,
+                    "firstName": "Christian",
+                    "lastName": "Breuer",
+                    "country": "GER",
+                    "gender": "M",
+                    "dateOfBirth": "1976-11-03"
+                }
+            },
+            {
+                "startNumber": 6,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 33,
+                "time": "1:52.110",
+                "timeBehind": "4.740",
+                "skater": {
+                    "id": 398,
+                    "firstName": "Jarmo",
+                    "lastName": "Valtonen",
+                    "country": "FIN",
+                    "gender": "M",
+                    "dateOfBirth": "1981-07-11"
+                }
+            },
+            {
+                "startNumber": 9,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 33,
+                "time": "1:52.110",
+                "timeBehind": "4.740",
+                "skater": {
+                    "id": 973,
+                    "firstName": "Kesato",
+                    "lastName": "Miyazaki",
+                    "country": "JPN",
+                    "gender": "M",
+                    "dateOfBirth": "1981-04-04"
+                }
+            },
+            {
+                "startNumber": 11,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 35,
+                "time": "1:52.270",
+                "timeBehind": "4.900",
+                "skater": {
+                    "id": 145,
+                    "firstName": "Andrey",
+                    "lastName": "Burlyayev",
+                    "country": "RUS",
+                    "gender": "M",
+                    "dateOfBirth": "1983-05-18"
+                }
+            },
+            {
+                "startNumber": 8,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 36,
+                "time": "1:52.410",
+                "timeBehind": "5.040",
+                "skater": {
+                    "id": 93,
+                    "firstName": "Andr\u00e9",
+                    "lastName": "Vreugdenhil",
+                    "country": "BEL",
+                    "gender": "M",
+                    "dateOfBirth": "1977-12-29"
+                }
+            },
+            {
+                "startNumber": 3,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 37,
+                "time": "1:52.420",
+                "timeBehind": "5.050",
+                "skater": {
+                    "id": 271,
+                    "firstName": "Takahiro",
+                    "lastName": "Ushiyama",
+                    "country": "JPN",
+                    "gender": "M",
+                    "dateOfBirth": "1981-05-01"
+                }
+            },
+            {
+                "startNumber": 23,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 38,
+                "time": "1:52.450",
+                "timeBehind": "5.080",
+                "skater": {
+                    "id": 506,
+                    "firstName": "Steven",
+                    "lastName": "Hartman",
+                    "country": "USA",
+                    "gender": "M",
+                    "dateOfBirth": "1995-02-25"
+                }
+            },
+            {
+                "startNumber": 3,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 39,
+                "time": "1:52.500",
+                "timeBehind": "5.130",
+                "skater": {
+                    "id": 834,
+                    "firstName": "Henrik",
+                    "lastName": "Christiansen",
+                    "country": "NOR",
+                    "gender": "M",
+                    "dateOfBirth": "1983-02-10"
+                }
+            },
+            {
+                "startNumber": 15,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 40,
+                "time": "1:52.620",
+                "timeBehind": "5.250",
+                "skater": {
+                    "id": 542,
+                    "firstName": "Shingo",
+                    "lastName": "Doi",
+                    "country": "JPN",
+                    "gender": "M",
+                    "dateOfBirth": "1983-08-23"
+                }
+            },
+            {
+                "startNumber": 4,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 41,
+                "time": "1:52.850",
+                "timeBehind": "5.480",
+                "skater": {
+                    "id": 981,
+                    "firstName": "Rune",
+                    "lastName": "Stordal",
+                    "country": "NOR",
+                    "gender": "M",
+                    "dateOfBirth": "1979-04-08"
+                }
+            },
+            {
+                "startNumber": 16,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 42,
+                "time": "1:52.930",
+                "timeBehind": "5.560",
+                "skater": {
+                    "id": 113,
+                    "firstName": "Nikolay",
+                    "lastName": "Ulyanin",
+                    "country": "KAZ",
+                    "gender": "M",
+                    "dateOfBirth": "1977-12-26"
+                }
+            },
+            {
+                "startNumber": 4,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 43,
+                "time": "1:53.700",
+                "timeBehind": "6.330",
+                "skater": {
+                    "id": 42,
+                    "firstName": "Xuefeng",
+                    "lastName": "Gao",
+                    "country": "CHN",
+                    "gender": "M",
+                    "dateOfBirth": "1980-03-22"
+                }
+            },
+            {
+                "startNumber": 11,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 44,
+                "time": "1:53.810",
+                "timeBehind": "6.440",
+                "skater": {
+                    "id": 80,
+                    "firstName": "Christian",
+                    "lastName": "Zoller",
+                    "country": "AUT",
+                    "gender": "M",
+                    "dateOfBirth": "1981-10-27"
+                }
+            },
+            {
+                "startNumber": 14,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 45,
+                "time": "1:54.000",
+                "timeBehind": "6.630",
+                "skater": {
+                    "id": 307,
+                    "firstName": "Even",
+                    "lastName": "Wetten",
+                    "country": "NOR",
+                    "gender": "M",
+                    "dateOfBirth": "1982-08-12"
+                }
+            },
+            {
+                "startNumber": 7,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 46,
+                "time": "1:54.120",
+                "timeBehind": "6.750",
+                "skater": {
+                    "id": 623,
+                    "firstName": "Jeff",
+                    "lastName": "Kitura",
+                    "country": "CAN",
+                    "gender": "M",
+                    "dateOfBirth": "1979-08-02"
+                }
+            },
+            {
+                "startNumber": 6,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 47,
+                "time": "1:54.430",
+                "timeBehind": "7.060",
+                "skater": {
+                    "id": 166,
+                    "firstName": "\u00d8yvind",
+                    "lastName": "Gravem",
+                    "country": "NOR",
+                    "gender": "M",
+                    "dateOfBirth": "1978-08-24"
+                }
+            },
+            {
+                "startNumber": 5,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 48,
+                "time": "1:54.540",
+                "timeBehind": "7.170",
+                "skater": {
+                    "id": 24,
+                    "firstName": "Nannan",
+                    "lastName": "Jiang",
+                    "country": "CHN",
+                    "gender": "M",
+                    "dateOfBirth": "1984-03-22"
+                }
+            },
+            {
+                "startNumber": 13,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 49,
+                "time": "1:54.570",
+                "timeBehind": "7.200",
+                "skater": {
+                    "id": 56,
+                    "firstName": "Sebastian",
+                    "lastName": "Falk",
+                    "country": "SWE",
+                    "gender": "M",
+                    "dateOfBirth": "1977-06-05"
+                }
+            },
+            {
+                "startNumber": 14,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 50,
+                "time": "1:55.050",
+                "timeBehind": "7.680",
+                "skater": {
+                    "id": 511,
+                    "firstName": "Bart",
+                    "lastName": "Veldkamp",
+                    "country": "BEL",
+                    "gender": "M",
+                    "dateOfBirth": "1967-11-22"
+                }
+            },
+            {
+                "startNumber": 1,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 51,
+                "time": "1:55.150",
+                "timeBehind": "7.780",
+                "skater": {
+                    "id": 392,
+                    "firstName": "Hyun-Soo",
+                    "lastName": "Lee",
+                    "country": "KOR",
+                    "gender": "M",
+                    "dateOfBirth": "1978-04-08"
+                }
+            },
+            {
+                "startNumber": 12,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 52,
+                "time": "1:56.230",
+                "timeBehind": "8.860",
+                "skater": {
+                    "id": 876,
+                    "firstName": "Georgiy",
+                    "lastName": "Smirnov",
+                    "country": "KAZ",
+                    "gender": "M",
+                    "dateOfBirth": "1982-03-21"
+                }
+            },
+            {
+                "startNumber": 1,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 53,
+                "time": "1:56.330",
+                "timeBehind": "8.960",
+                "skater": {
+                    "id": 639,
+                    "firstName": "Sergey",
+                    "lastName": "Pronin",
+                    "country": "KAZ",
+                    "gender": "M",
+                    "dateOfBirth": "1979-07-13"
+                }
+            },
+            {
+                "startNumber": 13,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 54,
+                "time": "1:57.420",
+                "timeBehind": "10.050",
+                "skater": {
+                    "id": 965,
+                    "firstName": "Miroslav",
+                    "lastName": "Vtipil",
+                    "country": "CZE",
+                    "gender": "M",
+                    "dateOfBirth": "1983-08-27"
+                }
+            },
+            {
+                "startNumber": 2,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 55,
+                "time": "1:57.750",
+                "timeBehind": "10.380",
+                "skater": {
+                    "id": 408,
+                    "firstName": "Martin",
+                    "lastName": "H\u00e4nggi",
+                    "country": "SUI",
+                    "gender": "M",
+                    "dateOfBirth": "1968-03-17"
+                }
+            },
+            {
+                "startNumber": 12,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 56,
+                "time": "1:57.920",
+                "timeBehind": "10.550",
+                "skater": {
+                    "id": 586,
+                    "firstName": "Ronald",
+                    "lastName": "Bosker",
+                    "country": "SUI",
+                    "gender": "M",
+                    "dateOfBirth": "1968-05-18"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Essent ISU World Cup - 3000m Ladies Division A",
+        "season": 2004,
+        "start": "2003-11-08",
+        "distance": {
+            "name": "3,000 Meter",
+            "distance": 3000,
+            "lapCount": 8
+        },
+        "category": "F",
+        "track": {
+            "id": 29,
+            "name": "Hamar Olympic Hall",
+            "city": "Hamar",
+            "country": "NOR",
+            "isOutdoor": false,
+            "altitude": 123,
+            "latitude": "60.793162",
+            "longitude": "11.101411"
+        },
+        "results": [
+            {
+                "startNumber": 10,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 1,
+                "time": "4:07.310",
+                "timeBehind": "0.000",
+                "skater": {
+                    "id": 193,
+                    "firstName": "Anni",
+                    "lastName": "Friesinger",
+                    "country": "GER",
+                    "gender": "F",
+                    "dateOfBirth": "1977-01-11"
+                }
+            },
+            {
+                "startNumber": 8,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 2,
+                "time": "4:08.060",
+                "timeBehind": "0.750",
+                "skater": {
+                    "id": 314,
+                    "firstName": "Claudia",
+                    "lastName": "Pechstein",
+                    "country": "GER",
+                    "gender": "F",
+                    "dateOfBirth": "1972-02-22"
+                }
+            },
+            {
+                "startNumber": 7,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 3,
+                "time": "4:08.390",
+                "timeBehind": "1.080",
+                "skater": {
+                    "id": 289,
+                    "firstName": "Renate",
+                    "lastName": "Groenewold",
+                    "country": "NED",
+                    "gender": "F",
+                    "dateOfBirth": "1976-10-08"
+                }
+            },
+            {
+                "startNumber": 2,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 4,
+                "time": "4:09.650",
+                "timeBehind": "2.340",
+                "skater": {
+                    "id": 348,
+                    "firstName": "Gunda",
+                    "lastName": "Niemann-Stirnemann",
+                    "country": "GER",
+                    "gender": "F",
+                    "dateOfBirth": "1966-09-07"
+                }
+            },
+            {
+                "startNumber": 2,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 5,
+                "time": "4:12.180",
+                "timeBehind": "4.870",
+                "skater": {
+                    "id": 308,
+                    "firstName": "Nami",
+                    "lastName": "Nemoto",
+                    "country": "JPN",
+                    "gender": "F",
+                    "dateOfBirth": "1975-03-24"
+                }
+            },
+            {
+                "startNumber": 5,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 6,
+                "time": "4:12.750",
+                "timeBehind": "5.440",
+                "skater": {
+                    "id": 604,
+                    "firstName": "Gretha",
+                    "lastName": "Smit",
+                    "country": "NED",
+                    "gender": "F",
+                    "dateOfBirth": "1976-01-20"
+                }
+            },
+            {
+                "startNumber": 10,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 7,
+                "time": "4:14.070",
+                "timeBehind": "6.760",
+                "skater": {
+                    "id": 130,
+                    "firstName": "Kristina",
+                    "lastName": "Groves",
+                    "country": "CAN",
+                    "gender": "F",
+                    "dateOfBirth": "1976-12-04"
+                }
+            },
+            {
+                "startNumber": 6,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 8,
+                "time": "4:14.320",
+                "timeBehind": "7.010",
+                "skater": {
+                    "id": 430,
+                    "firstName": "Barbara",
+                    "lastName": "de Loor",
+                    "country": "NED",
+                    "gender": "F",
+                    "dateOfBirth": "1974-05-26"
+                }
+            },
+            {
+                "startNumber": 9,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 9,
+                "time": "4:14.880",
+                "timeBehind": "7.570",
+                "skater": {
+                    "id": 670,
+                    "firstName": "Clara",
+                    "lastName": "Hughes",
+                    "country": "CAN",
+                    "gender": "F",
+                    "dateOfBirth": "1972-09-27"
+                }
+            },
+            {
+                "startNumber": 8,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 10,
+                "time": "4:14.950",
+                "timeBehind": "7.640",
+                "skater": {
+                    "id": 12,
+                    "firstName": "Catherine",
+                    "lastName": "Raney",
+                    "country": "USA",
+                    "gender": "F",
+                    "dateOfBirth": "1980-06-20"
+                }
+            },
+            {
+                "startNumber": 4,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 11,
+                "time": "4:15.110",
+                "timeBehind": "7.800",
+                "skater": {
+                    "id": 114,
+                    "firstName": "Marja",
+                    "lastName": "Vis",
+                    "country": "NED",
+                    "gender": "F",
+                    "dateOfBirth": "1977-01-15"
+                }
+            },
+            {
+                "startNumber": 6,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 12,
+                "time": "4:15.610",
+                "timeBehind": "8.300",
+                "skater": {
+                    "id": 417,
+                    "firstName": "Varvara",
+                    "lastName": "Barysheva",
+                    "country": "RUS",
+                    "gender": "F",
+                    "dateOfBirth": "1977-03-24"
+                }
+            },
+            {
+                "startNumber": 1,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 13,
+                "time": "4:16.210",
+                "timeBehind": "8.900",
+                "skater": {
+                    "id": 858,
+                    "firstName": "Eriko",
+                    "lastName": "Seo",
+                    "country": "JPN",
+                    "gender": "F",
+                    "dateOfBirth": "1979-03-12"
+                }
+            },
+            {
+                "startNumber": 3,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 14,
+                "time": "4:16.280",
+                "timeBehind": "8.970",
+                "skater": {
+                    "id": 631,
+                    "firstName": "Eriko",
+                    "lastName": "Ishino",
+                    "country": "JPN",
+                    "gender": "F",
+                    "dateOfBirth": "1985-12-01"
+                }
+            },
+            {
+                "startNumber": 4,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 15,
+                "time": "4:16.700",
+                "timeBehind": "9.390",
+                "skater": {
+                    "id": 469,
+                    "firstName": "Svetlana",
+                    "lastName": "Vysokova",
+                    "country": "RUS",
+                    "gender": "F",
+                    "dateOfBirth": "1972-05-12"
+                }
+            },
+            {
+                "startNumber": 9,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 16,
+                "time": "4:16.820",
+                "timeBehind": "9.510",
+                "skater": {
+                    "id": 567,
+                    "firstName": "Lucille",
+                    "lastName": "Opitz",
+                    "country": "GER",
+                    "gender": "F",
+                    "dateOfBirth": "1977-11-24"
+                }
+            },
+            {
+                "startNumber": 7,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 17,
+                "time": "4:17.830",
+                "timeBehind": "10.520",
+                "skater": {
+                    "id": 459,
+                    "firstName": "Helen",
+                    "lastName": "van Goozen",
+                    "country": "NED",
+                    "gender": "F",
+                    "dateOfBirth": "1980-12-25"
+                }
+            },
+            {
+                "startNumber": 1,
+                "startLane": "I",
+                "armband": "white",
+                "rank": 18,
+                "time": "4:19.950",
+                "timeBehind": "12.640",
+                "skater": {
+                    "id": 986,
+                    "firstName": "Katrin",
+                    "lastName": "Kalex",
+                    "country": "GER",
+                    "gender": "F",
+                    "dateOfBirth": "1980-02-14"
+                }
+            },
+            {
+                "startNumber": 5,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 19,
+                "time": "4:25.160",
+                "timeBehind": "17.850",
+                "skater": {
+                    "id": 673,
+                    "firstName": "Tara",
+                    "lastName": "Risling",
+                    "country": "CAN",
+                    "gender": "F",
+                    "dateOfBirth": "1981-07-27"
+                }
+            },
+            {
+                "startNumber": 3,
+                "startLane": "O",
+                "armband": "red",
+                "rank": 20,
+                "time": "4:27.970",
+                "timeBehind": "20.660",
+                "skater": {
+                    "id": 859,
+                    "firstName": "Tiffany",
+                    "lastName": "Hughes",
+                    "country": "CAN",
+                    "gender": "F",
+                    "dateOfBirth": "1981-10-28"
+                }
+            }
+        ]
+    }
+]
