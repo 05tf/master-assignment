@@ -2,11 +2,25 @@ import os
 import sys
 import json
 import sqlite3
-#hihi
+
 from skater import Skater
 from track import Track
 from event import Event
-        
+
+# with open('events.json', 'r') as json_file:
+#     ice_skating_data = json.load(json_file)
+
+# con = sqlite3.connect('iceskatingapp.db')
+# cur = con.cursor()
+
+def empty_db(con, cur):
+
+    cur.execute("DELETE FROM skaters")
+    cur.execute("DELETE FROM events")
+    cur.execute("DELETE FROM tracks")
+    cur.execute("DELETE FROM event_skaters")
+    con.commit()
+
 
 def fill_tracks_db(con, cur, ice_skating_data):
 
@@ -20,23 +34,29 @@ def fill_tracks_db(con, cur, ice_skating_data):
                         track['isOutdoor'],
                         track['altitude']))
     con.commit()
-def time_converter(time_string):
-    minutes, seconds = map(float, time_string.split(":"))
-    return round((minutes * 60) + seconds, 2)
 
 def fill_events_db(con, cur, ice_skating_data):
-
     for event in ice_skating_data:
-        cur.execute("INSERT OR IGNORE INTO events VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        for result in event["results"]:
+
+            #minutes.seconds.miliseconds --> seconds.miliseconds
+            time_str = event['results'][0]['time']
+            try:
+                minutes, seconds = map(float, time_str.split(":"))
+                min_to_sec = minutes * 60
+                converted_time = round(min_to_sec + seconds, 3)
+            except:
+                pass
+
+            cur.execute("INSERT OR IGNORE INTO events VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
                         (event['id'],
                         event['title'],
                         event['track']['id'],
                         event['start'],
                         event['distance']['distance'],
-                        time_converter(event['results'][0]['time']),
+                        converted_time,
                         event['distance']['lapCount'],
-                        event['results'][0]['skater']['firstName'] + \
-                        " " + event['results'][0]['skater']['lastName'],
+                        result['skater']['firstName'] + " " + result['skater']['lastName'],
                         event['category'],))
     con.commit()
 
@@ -64,16 +84,18 @@ def fill_event_skaters_db(con, cur, ice_skating_data):
     con.commit()
 def main():
 
-    with open('mini_events.json', 'r') as json_file:
+    with open('events.json', 'r') as json_file:
         ice_skating_data = json.load(json_file)
 
     con = sqlite3.connect('iceskatingapp.db')
     cur = con.cursor()
 
+    empty_db(con, cur)
     fill_tracks_db(con, cur, ice_skating_data)
     fill_events_db(con, cur, ice_skating_data)
     fill_skaters_db(con, cur, ice_skating_data)
     fill_event_skaters_db(con, cur, ice_skating_data)
+
     con.close()
 
     

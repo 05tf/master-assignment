@@ -1,8 +1,11 @@
 from datetime import datetime, date
+import os
+import sys
 
 class Skater:
 
-    def __init__(self, id, first_name, last_name, nationality, gender, date_of_birth) -> None:
+    #initialiseren van de attributes
+    def __init__(self, id: int, first_name: str, last_name: str, nationality: str, gender: str, date_of_birth: date) -> None:
         self.id = id
         self.first_name = first_name
         self.last_name = last_name
@@ -10,11 +13,12 @@ class Skater:
         self.gender = gender
         self.date_of_birth = date_of_birth
 
-    def get_age(self, specific_date=None):
-        if specific_date is None:
-            specific_date = datetime.now().date() #pakt de alleen datum van nu (zonder tijd)
-        age_year = specific_date - self.date_of_birth
-        pass
+    #pakt de datum van nu en berekent (year.now - birth.year) = age
+    def get_age(self, date=None):
+        if date is None:
+            date = datetime.now().year
+        age_year = date - self.date_of_birth.year
+        return age_year
     
     def get_events(self):
         pass
