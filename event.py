@@ -16,8 +16,23 @@ class Event:
 
     def add_skater(self):
         pass
+   
+   
     def get_skaters(self) -> list:
-        pass
+        con = sqlite3.connect('iceskatingapp.db')
+        cur = con.cursor()
+        list = []
+
+        firstname, lastname = self.winner.split(" ")
+        skater_get = cur.execute("SELECT * FROM skaters WHERE first_name = ? AND last_name= ?", (firstname, lastname)).fetchall()
+        con.close()
+        
+        for x in skater_get:
+            print(x)
+            list.append(x)
+
+        return list
+    
     def get_track(self):
         con = sqlite3.connect('iceskatingapp.db')
         cur = con.cursor()
@@ -25,8 +40,12 @@ class Event:
         #fetch alle altitudes
         track_get = cur.execute("SELECT * FROM tracks WHERE track_id = ?", (self.track_id,)).fetchall()
         return track_get
+        
+
     def convert_date(self, to_format: str) -> str:
         return self.date.strftime(to_format)
+    
+
     def convert_duration(self, to_format: str) -> str:
         pass
     # Representation method

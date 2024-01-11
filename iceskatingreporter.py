@@ -69,7 +69,7 @@ class Reporter:
         con = sqlite3.connect('iceskatingapp.db')
         cur = con.cursor()
 
-        list = []
+        non_tuple_list = []
         
         desc_events = cur.execute("SELECT laps FROM events WHERE track_id = ? ORDER BY laps DESC"  , (track_id,)).fetchone()
         extra_laps_events = cur.execute("SELECT * FROM events WHERE laps = ? AND track_id = ? ", (desc_events[0] , track_id) ).fetchall()
@@ -78,9 +78,9 @@ class Reporter:
 
         for event in extra_laps_events:
             event_obj = Event(*event)
-            list.append(event_obj)
+            non_tuple_list.append(event_obj)
 
-        tuple_list = tuple(list)
+        tuple_list = tuple(non_tuple_list)
         return(tuple_list)
 
     # Which skaters have made the most events -> tuple[Skater, ...]
