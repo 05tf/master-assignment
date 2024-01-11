@@ -4,6 +4,14 @@ from skater import Skater
 from datetime import datetime
 import sqlite3
 
+con = sqlite3.connect('iceskatingapp.db')
+cur = con.cursor()
+
+events_track_id = cur.execute("SELECT * FROM events WHERE id = ? ORDER BY laps DESC"  , (7,)).fetchone()
+#laps is row[6]
+print(events_track_id)
+
+
 class Reporter:
 
     # How many skaters are there? -> int
@@ -68,7 +76,11 @@ class Reporter:
     
     # Which event has the most laps for the given track_id -> tuple[Event, ...]
     def events_with_most_laps_for_track(self, track_id: int) -> tuple[Event, ...]:
-        pass
+        con = sqlite3.connect('iceskatingapp.db')
+        cur = con.cursor()
+
+        events_track_id = cur.execute("SELECT * FROM events WHERE id = ? ORDER BY laps DESC"  , (track_id,)).fetchone()
+        #laps is row[6]
 
     # Which skaters have made the most events -> tuple[Skater, ...]
     # Which skaters have made the most succesful events -> tuple[Skater, ...]
