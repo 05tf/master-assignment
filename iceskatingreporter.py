@@ -7,9 +7,21 @@ import sqlite3
 con = sqlite3.connect('iceskatingapp.db')
 cur = con.cursor()
 
-events_track_id = cur.execute("SELECT * FROM events WHERE id = ? ORDER BY laps DESC"  , (7,)).fetchone()
-#laps is row[6]
-print(events_track_id)
+list = []
+
+track_id = 29
+desc_events = cur.execute("SELECT laps FROM events WHERE track_id = ? ORDER BY laps DESC"  , (track_id,)).fetchone()
+
+extra_laps_events = cur.execute("SELECT * FROM events WHERE laps = ? AND track_id = ? ", (desc_events[0] , track_id) ).fetchall()
+
+con.close()
+
+for event in extra_laps_events:
+    event_obj = Event(*event)
+    list.append(event_obj)
+
+tuple_list = tuple(list)
+print(tuple_list)
 
 
 class Reporter:
@@ -19,9 +31,7 @@ class Reporter:
         con = sqlite3.connect('iceskatingapp.db')
         cur = con.cursor()
         
-        cur.execute("SELECT * FROM skaters")
-        skaters_table = cur.fetchall()
-
+        skaters_table = cur.execute("SELECT * FROM skaters").fetchall()
         con.close()
 
         return len(skaters_table)
@@ -79,8 +89,12 @@ class Reporter:
         con = sqlite3.connect('iceskatingapp.db')
         cur = con.cursor()
 
-        events_track_id = cur.execute("SELECT * FROM events WHERE id = ? ORDER BY laps DESC"  , (track_id,)).fetchone()
-        #laps is row[6]
+        events_track_id = cur.execute("SELECT laps FROM events WHERE id = ? ORDER BY laps DESC"  , (track_id,)).fetchone()
+        highest_laps = events_track_id
+        events_extra = cur.execute("SELECT * FROM events WHERE id = ? AND laps = ?"  , (track_id, highest_laps)).fetchall()
+
+        con.close()
+        print (events_extra)
 
     # Which skaters have made the most events -> tuple[Skater, ...]
     # Which skaters have made the most succesful events -> tuple[Skater, ...]

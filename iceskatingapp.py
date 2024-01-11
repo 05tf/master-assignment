@@ -41,12 +41,13 @@ def fill_events_db(con, cur, ice_skating_data):
 
             #minutes.seconds.miliseconds --> seconds.miliseconds
             time_str = event['results'][0]['time']
-            try:
-                minutes, seconds = map(float, time_str.split(":"))
-                min_to_sec = minutes * 60
-                converted_time = round(min_to_sec + seconds, 3)
-            except:
-                pass
+            print(time_str)
+            # try:
+            # minutes, seconds = map(float, time_str.split(":"))
+            # min_to_sec = minutes * 60
+            # converted_time = round(min_to_sec + seconds, 4)
+            # except:
+            #     pass
 
             cur.execute("INSERT OR IGNORE INTO events VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
                         (event['id'],
@@ -54,7 +55,7 @@ def fill_events_db(con, cur, ice_skating_data):
                         event['track']['id'],
                         event['start'],
                         event['distance']['distance'],
-                        converted_time,
+                        event['results'][0]['time'],
                         event['distance']['lapCount'],
                         result['skater']['firstName'] + " " + result['skater']['lastName'],
                         event['category'],))
