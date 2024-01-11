@@ -1,4 +1,5 @@
 from datetime import datetime
+import sqlite3
 
 class Event:
 
@@ -18,10 +19,15 @@ class Event:
     def get_skaters(self) -> list:
         pass
     def get_track(self):
-        pass
-    def convert_date(self) -> str:
-        pass
-    def convert_duration(self) -> str:
+        con = sqlite3.connect('iceskatingapp.db')
+        cur = con.cursor()
+
+        #fetch alle altitudes
+        track_get = cur.execute("SELECT * FROM tracks WHERE track_id = ?", (self.track_id,)).fetchall()
+        return track_get
+    def convert_date(self, to_format: str) -> str:
+        return self.date.strftime(to_format)
+    def convert_duration(self, to_format: str) -> str:
         pass
     # Representation method
     # This will format the output in the correct order

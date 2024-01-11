@@ -4,26 +4,6 @@ from skater import Skater
 from datetime import datetime
 import sqlite3
 
-con = sqlite3.connect('iceskatingapp.db')
-cur = con.cursor()
-
-list = []
-
-track_id = 29
-desc_events = cur.execute("SELECT laps FROM events WHERE track_id = ? ORDER BY laps DESC"  , (track_id,)).fetchone()
-
-extra_laps_events = cur.execute("SELECT * FROM events WHERE laps = ? AND track_id = ? ", (desc_events[0] , track_id) ).fetchall()
-
-con.close()
-
-for event in extra_laps_events:
-    event_obj = Event(*event)
-    list.append(event_obj)
-
-tuple_list = tuple(list)
-print(tuple_list)
-
-
 class Reporter:
 
     # How many skaters are there? -> int
@@ -89,12 +69,19 @@ class Reporter:
         con = sqlite3.connect('iceskatingapp.db')
         cur = con.cursor()
 
-        events_track_id = cur.execute("SELECT laps FROM events WHERE id = ? ORDER BY laps DESC"  , (track_id,)).fetchone()
-        highest_laps = events_track_id
-        events_extra = cur.execute("SELECT * FROM events WHERE id = ? AND laps = ?"  , (track_id, highest_laps)).fetchall()
+        list = []
+        
+        desc_events = cur.execute("SELECT laps FROM events WHERE track_id = ? ORDER BY laps DESC"  , (track_id,)).fetchone()
+        extra_laps_events = cur.execute("SELECT * FROM events WHERE laps = ? AND track_id = ? ", (desc_events[0] , track_id) ).fetchall()
 
         con.close()
-        print (events_extra)
+
+        for event in extra_laps_events:
+            event_obj = Event(*event)
+            list.append(event_obj)
+
+        tuple_list = tuple(list)
+        return(tuple_list)
 
     # Which skaters have made the most events -> tuple[Skater, ...]
     # Which skaters have made the most succesful events -> tuple[Skater, ...]

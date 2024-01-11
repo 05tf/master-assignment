@@ -14,7 +14,7 @@ class Skater:
         self.date_of_birth = date_of_birth
 
     #pakt de datum van nu en berekent (year.now - birth.year) = age
-    def get_age(self, date=None):
+    def get_age(self, date: datetime=None):
         if date is None:
             date = datetime.now().year
         age_year = date - self.date_of_birth.year
