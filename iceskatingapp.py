@@ -37,17 +37,17 @@ def fill_tracks_db(con, cur, ice_skating_data):
 
 def fill_events_db(con, cur, ice_skating_data):
     for event in ice_skating_data:
-        for result in event["results"]:
+        for event_result in event["results"]:
 
-            #minutes.seconds.miliseconds --> seconds.miliseconds
+            #minutes:seconds.miliseconds --> seconds.miliseconds
             time_str = event['results'][0]['time']
             #gebruik hier try except want sommige tijden 
             #hebben geen minuten dus dan kan je ook niet splitten op ":"
-            try:
+            if ":" in time_str:
                 minutes, seconds = map(float, time_str.split(":"))
                 min_to_sec = minutes * 60
                 converted_time = round(min_to_sec + seconds, 4)
-            except:
+            else:
                 pass
 
             cur.execute("INSERT OR IGNORE INTO events VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
@@ -58,15 +58,15 @@ def fill_events_db(con, cur, ice_skating_data):
                         event['distance']['distance'],
                         converted_time,
                         event['distance']['lapCount'],
-                        result['skater']['firstName'] + " " + result['skater']['lastName'],
+                        event_result["skater"]['id'],
                         event['category'],))
     con.commit()
 
 def fill_skaters_db(con, cur, ice_skating_data):
 
     for event in ice_skating_data:
-        for result in event["results"]:
-            skater = result["skater"]
+        for event_result in event["results"]:
+            skater = event_result["skater"]
             cur.execute("INSERT OR IGNORE INTO skaters VALUES (?, ?, ?, ?, ?, ?)", 
                         (skater['id'],
                         skater['firstName'],
@@ -79,8 +79,8 @@ def fill_skaters_db(con, cur, ice_skating_data):
 def fill_event_skaters_db(con, cur, ice_skating_data):
     for event in ice_skating_data:
         id_event = event['id']
-        for result in event["results"]:
-            skater = result["skater"]['id']
+        for event_result in event["results"]:
+            skater = event_result["skater"]['id']
             cur.execute("INSERT OR IGNORE INTO event_skaters VALUES (?, ?)",
                         (skater, id_event))
     con.commit()

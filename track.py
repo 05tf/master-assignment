@@ -19,14 +19,16 @@ class Track:
 
         event_list = []
 
-        get_event_id = cur.execute("SELECT id FROM events WHERE track_id = ?", (self.id)).fetchall()
-        get_matching_event = cur.execute("SELECT * FROM events WHERE id = ?",(get_event_id)).fetchall()
+        get_event_ids = cur.execute("SELECT id FROM events WHERE track_id = ?", (self.id,)).fetchall()
+
+        for event_id in get_event_ids:
+            select_events = cur.execute("SELECT * FROM events WHERE id = ?", (event_id[0],)).fetchall()
+            event_list.extend(select_events)
+
         con.close()
-
-        for event in get_matching_event:
-            event_list.append(event)
-
         return event_list
+
+
     # Representation method
     # This will format the output in the correct order
     # Format is @dataclass-style: Classname(attr=value, attr2=value2, ...)

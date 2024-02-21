@@ -1,3 +1,4 @@
+from event import Event
 from datetime import datetime, date
 import os
 import sys
@@ -21,21 +22,21 @@ class Skater:
         age_year = date - self.date_of_birth.year
         return age_year
     
-    def get_events(self) -> list:
+    def get_events(self):
+        events = []
 
         con = sqlite3.connect('iceskatingapp.db')
         cur = con.cursor()
 
-        event_list = []
+        select_event_ids = cur.execute("SELECT event_id FROM event_skaters WHERE skater_id = ?", (self.id,)).fetchall()
 
-        get_event_id = cur.execute("SELECT event_id FROM event_skaters WHERE skater_id = ?", (self.id)).fetchall()
-        get_matching_event = cur.execute("SELECT * FROM events WHERE id = ?",(get_event_id)).fetchall()
-        con.close()
+        for event_id in select_event_ids:
+            select_events = cur.execute("SELECT * FROM events WHERE id = ?", (event_id[0],)).fetchall()
+            events.extend([Event(*event) for event in select_events])
 
-        for event in get_matching_event:
-            event_list.append(event)
+        return events
 
-        return event_list
+
     # Representation method
     # This will format the output in the correct order
     # Format is @dataclass-style: Classname(attr=value, attr2=value2, ...)

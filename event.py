@@ -1,6 +1,7 @@
 from datetime import datetime
 import sqlite3
 
+
 class Event:
 
     def __init__(self, id: int, name: str, track_id: int, date: datetime, distance: int, duration: float, laps: int, winner: str, category: str):
@@ -14,40 +15,53 @@ class Event:
         self.winner = winner
         self.category = category
 
-    def add_skater(self):
-        pass
-   
-   
+    def add_skater(self, skater_id: int):
+        from skater import Skater
+        con = sqlite3.connect('iceskatingapp.db')
+        cur = con.cursor()
+
+        check_if_exists = cur.execute("SELECT * FROM event_skaters WHERE skater_id = ? AND event_id = ?", 
+                                      (skater_id, self.id)).fetchone()
+
+        if not check_if_exists:
+            add_skater = cur.execute("INSERT INTO event_skaters (skater_id, event_id) VALUES (?, ?)", 
+                                     (skater_id, self.id)).commit().close()
+            return True
+        else:
+            con.close()
+            return False
+
     def get_skaters(self) -> list:
+        from skater import Skater
         con = sqlite3.connect('iceskatingapp.db')
         cur = con.cursor()
-        list = []
 
-        firstname, lastname = self.winner.split(" ")
-        skater_get = cur.execute("SELECT * FROM skaters WHERE first_name = ? AND last_name= ?", (firstname, lastname)).fetchall()
-        con.close()
-        
-        for x in skater_get:
-            print(x)
-            list.append(x)
+        skater_ids = cur.execute("SELECT skater_id FROM event_skaters WHERE event_id = ?", 
+                                 (self.id,)).fetchall()
 
-        return list
-    
+        for skater_id in skater_ids:
+            skater_data = cur.execute("SELECT * FROM skaters WHERE id = ?", 
+                                      (skater_id[0],)).fetchone()
+            con.close()
+            return [Skater(*skater_data)]
+
     def get_track(self):
+        from track import Track
         con = sqlite3.connect('iceskatingapp.db')
         cur = con.cursor()
 
-        #fetch alle altitudes
-        track_get = cur.execute("SELECT * FROM tracks WHERE track_id = ?", (self.track_id,)).fetchall()
-        return track_get
-        
+        track_data = cur.execute("SELECT * FROM tracks WHERE id = ?", 
+                                 (self.track_id,)).fetchone()
+        con.close()
+        return [Track(*track_data)] if track_data else []
 
     def convert_date(self, to_format: str) -> str:
-        return self.date.strftime(to_format)
-    
+        givendate = datetime.strptime(self.date, "%Y-%m-%d")
+        return givendate.strftime(to_format)
 
     def convert_duration(self, to_format: str) -> str:
         pass
+
     # Representation method
     # This will format the output in the correct order
     # Format is @dataclass-style: Classname(attr=value, attr2=value2, ...)
